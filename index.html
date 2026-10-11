@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support — Purr Memo</title>
+<meta name="description" content="Support page for the Purr Memo iOS app.">
+<style>
+  :root {
+    --coral: #FF6F61;
+    --coral-soft: #FFE5E1;
+    --navy: #1C2340;
+    --gray: #6B7280;
+    --bg: #FAF7F4;
+    --card: #FFFFFF;
+    --border: #F0EAE4;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--navy);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  /* ---- Header ---- */
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  header .emoji {
+    font-size: 56px;
+    line-height: 1;
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  header h1 {
+    font-size: 32px;
+    margin: 0 0 8px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+
+  header p {
+    margin: 0;
+    color: var(--gray);
+    font-size: 17px;
+  }
+
+  /* ---- Cards ---- */
+  .card {
+    background: var(--card);
+    border-radius: 20px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 12px rgba(28, 35, 64, 0.05);
+    border: 1px solid var(--border);
+  }
+
+  .card h2 {
+    font-size: 20px;
+    margin: 0 0 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .card h2 .icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    background: var(--coral-soft);
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+
+  .card p { margin: 0 0 12px; }
+  .card p:last-child { margin-bottom: 0; }
+
+  /* ---- Contact button ---- */
+  .contact-btn {
+    display: inline-block;
+    background: var(--coral);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 14px;
+    margin-top: 8px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 4px 12px rgba(255, 111, 97, 0.3);
+  }
+
+  .contact-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(255, 111, 97, 0.4);
+  }
+
+  /* ---- FAQ ---- */
+  .faq-item {
+    border-top: 1px solid var(--border);
+    padding: 18px 0;
+  }
+
+  .faq-item:first-of-type { border-top: none; padding-top: 0; }
+  .faq-item:last-child { padding-bottom: 0; }
+
+  .faq-q {
+    font-weight: 600;
+    margin: 0 0 6px;
+    font-size: 15px;
+  }
+
+  .faq-a {
+    margin: 0;
+    color: var(--gray);
+    font-size: 15px;
+  }
+
+  .faq-a ul {
+    margin: 8px 0 0;
+    padding-left: 22px;
+  }
+
+  .faq-a li {
+    margin-bottom: 4px;
+  }
+
+  /* ---- Links ---- */
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    transition: background 0.15s ease;
+  }
+
+  .links a:hover { background: var(--coral-soft); }
+
+  /* ---- Footer ---- */
+  footer {
+    text-align: center;
+    margin-top: 48px;
+    color: var(--gray);
+    font-size: 13px;
+  }
+
+  footer a { color: var(--gray); }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <span class="emoji">🐾</span>
+    <h1>Purr Memo</h1>
+    <p>Support &amp; Help Center</p>
+  </header>
+
+  <!-- Contact -->
+  <div class="card">
+    <h2><span class="icon">✉️</span> Contact Us</h2>
+    <p>Having trouble, found a bug, or just want to say hi?
+       We'd love to hear from you. We usually respond within 1–2 business days.</p>
+    <a class="contact-btn" href="mailto:kelvinlee.apps@gmail.com?subject=Purr%20Memo%20Support">
+      Email Support
+    </a>
+  </div>
+
+  <!-- FAQ -->
+  <div class="card">
+    <h2><span class="icon">💬</span> Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <p class="faq-q">How do I unlock all cat templates?</p>
+      <p class="faq-a">Tap any locked cat template in the app to open the unlock
+        screen, then complete the one-time in-app purchase. Once purchased, all
+        current and future templates are yours forever — no subscription, no
+        recurring charges.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">My memo photo isn't showing up.</p>
+      <p class="faq-a">Photos you add are stored locally on your device and never
+        uploaded anywhere. If your photo isn't appearing, try these steps:</p>
+      <ul>
+        <li>Make sure you tapped <strong>Add Photo</strong> in Settings and
+            completed the crop step.</li>
+        <li>If the photo still doesn't show, try force-closing and reopening the
+            app.</li>
+        <li>If it continues, please
+            <a href="mailto:kelvinlee.apps@gmail.com?subject=Purr%20Memo%20Photo%20Issue">email us</a>
+            with your device model and iOS version.</li>
+      </ul>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">"Save Image" didn't work in the share sheet.</p>
+      <p class="faq-a">When you tap <strong>Save Image</strong> for the first time,
+        iOS may ask for permission to add photos to your library. If you tapped
+        <strong>Don't Allow</strong>, you can re-enable it in
+        <em>Settings → Purr Memo → Photos → Add Photos Only</em> on your
+        iPhone, then try again.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">How do I save or share my memo?</p>
+      <p class="faq-a">From the Share screen, tap <strong>Share</strong> to open
+        the standard iOS share sheet. From there you can save the image to your
+        Photos app, send it via Messages or Mail, or post it to social media.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">I lost all my settings after reinstalling the app.</p>
+      <p class="faq-a">App settings and memo photos are stored on your device,
+        not in the cloud. Reinstalling the app clears them. Your in-app purchase
+        is safe, though — tap any locked cat template to open the unlock screen,
+        and tap <strong>Restore Purchases</strong> to unlock again.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">The app is crashing or acting strange.</p>
+      <p class="faq-a">Try force-closing and reopening the app, or restart your
+        device. If the problem continues, please email us with your device model
+        and iOS version, and a brief description of what happened.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">Does the app collect my data?</p>
+      <p class="faq-a">No. Everything runs on your device. We don't collect
+        personal information, and photos you add are stored only locally.
+        See our Privacy Policy for details.</p>
+    </div>
+  </div>
+
+  <!-- Privacy & Terms -->
+  <div class="card">
+    <h2><span class="icon">🔒</span> Privacy &amp; Terms</h2>
+    <p>Review how we handle your data and the terms of using the app.</p>
+    <div class="links">
+      <a href="https://kelvin-lee-20.github.io/purr-memo-support/privacy.html"
+         target="_blank" rel="noopener">Privacy Policy</a>
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+         target="_blank" rel="noopener">Terms of Use</a>
+    </div>
+  </div>
+
+  <footer>
+    © <span id="year"></span> Purr Memo · Made with 🐱 and ❤️
+  </footer>
+
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
